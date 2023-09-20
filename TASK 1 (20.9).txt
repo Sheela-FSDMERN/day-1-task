@@ -1,0 +1,38 @@
+1.Write a blog on Difference between HTTP1.1 vs HTTP2
+
+Hypertext Transfer Protocol (HTTP) used for communication between web servers and clients. Here are some key differences between HTTP1.1 and HTTP2
+
+1. Performance: HTTP 2 is designed to be more efficient and faster than HTTP 1.1. It introduces several performance optimizations, such as multiplexing, header compression, and server push, which allow for better resource utilization and reduced latency.
+
+2.Protocol Design: HTTP 1.1 is a text-based protocol, where requests and responses are sent in plain text. HTTP2  is a binary protocol, which means that the data is encoded in binary format for more efficient processing.
+
+3.Multiplexing: In HTTP1.1, only one request can be sent over a single TCP connection at a time, leading to head-of-line blocking. HTTP 2 introduces multiplexing, allowing multiple requests and responses to be sent and received concurrently over a single connection. This improves overall performance and reduces latency.
+
+4.security:While both HTTP 1.1 and HTTP 2 can be used with or without encryption, HTTP 2 encourages the use of encryption by making it a requirement for certain features, such as server push.
+
+5.Prioritization: HTTP 2 introduces stream prioritization, allowing the client to assign priority levels to different requests. This enables more efficient resource allocation and better handling of critical resources.HTTP 2 offers significant performance improvements over HTTP 1.1
+
+2.Write a blog about objects and its internal representation in Javascript
+Objects in JavaScript are a container for properties and methods. They are created using the object literal notation, which is denoted by curly braces {}. For example:
+   
+     javascript
+   const person = {
+     name: 'shee',
+     age: 25,
+     greet: function() {
+       console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+     }
+   };
+  
+  Properties:
+   Objects can have properties, which are key-value pairs. These properties can be accessed or modified using dot notation (e.g., `person.name`) or bracket notation (e.g., `person['name']`). Properties can store various types of values, including strings, numbers, arrays, or even other objects.
+
+  Methods:
+   Objects can also have methods, which are functions associated with the object. Methods can be executed by using the object name followed by dot notation and the method name (e.g., `person.greet()`) or bracket notation (e.g., `person['greet']()`). Methods have access to the object's properties and can manipulate them accordingly.
+
+  Internal Representation:
+   Internally, objects in JavaScript are stored as a collection of key-value pairs, where the keys are stored as strings and the values can be of any type. JavaScript engines often use hash tables or dictionaries to efficiently access object properties in constant time. This allows quick retrieval and manipulation of object properties, even if the object contains a large number of properties.
+
+
+
+
